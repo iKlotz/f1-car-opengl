@@ -70,63 +70,63 @@ public class Main {
 
 
 
-//		canvas.addKeyListener(new KeyAdapter() {
-//			@Override
-//			public void keyPressed(KeyEvent e) {
-//				super.keyPressed(e);
-//			}
-//
-//			@Override
-//			public void keyReleased(KeyEvent e) {
-//				super.keyReleased(e);
-//			}
-//
-//			@Override
-//			public void keyTyped(KeyEvent e) {
-//				switch (e.getKeyChar()) {
-//
-//				// Toggle wireframe mode
-//				case 'p':
-//				case KeyEvent.VK_P:
-//					viewer.toggleRenderMode();
-//					break;
-//
-//				// Toggle axes
-//				case 'a':
-//				case KeyEvent.VK_A:
-//					viewer.toggleAxes();
-//					break;
-//
-//				// Toggle light spheres
-//				case 'l':
-//				case KeyEvent.VK_L:
-//					viewer.toggleLightSpheres();
-//					break;
-//
-//				// Show next model
-//				case 'm':
-//				case KeyEvent.VK_M:
-//					viewer.setModel(nextModel());
-//					break;
-//
-//				case 'b':
-//				case KeyEvent.VK_B:
-//					viewer.toggleBoundingVolume();
-//					break;
-//
-//				// exit
-//				case KeyEvent.VK_ESCAPE:
-//					System.exit(0);
-//					break; // should never reach this line;
-//
-//				default:
-//					break;
-//				}
-//
-//				canvas.repaint();
-//				super.keyTyped(e);
-//			}
-//		});
+		canvas.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				super.keyPressed(e);
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				super.keyReleased(e);
+			}
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				switch (e.getKeyChar()) {
+
+				// Toggle wireframe mode
+				case 'p':
+				case KeyEvent.VK_P:
+					viewer.toggleRenderMode();
+					break;
+
+				// Toggle axes
+				case 'a':
+				case KeyEvent.VK_A:
+					viewer.toggleAxes();
+					break;
+
+				// Toggle light spheres
+				case 'l':
+				case KeyEvent.VK_L:
+					viewer.toggleLightSpheres();
+					break;
+
+				// Show next model
+				case 'm':
+				case KeyEvent.VK_M:
+					viewer.setModel(nextModel());
+					break;
+
+				case 'b':
+				case KeyEvent.VK_B:
+					viewer.toggleBoundingVolume();
+					break;
+
+				// exit
+				case KeyEvent.VK_ESCAPE:
+					System.exit(0);
+					break; // should never reach this line;
+
+				default:
+					break;
+				}
+
+				canvas.repaint();
+				super.keyTyped(e);
+			}
+		});
 
 		canvas.addMouseMotionListener(new MouseMotionAdapter() {
 			@Override
